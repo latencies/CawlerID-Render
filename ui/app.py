@@ -45,7 +45,10 @@ def analyze():
 
     # TODO: Pass reference_specs ***
     # Added: from ranker.ranker import reference_specs
+    from similarity_model.similarity_ranker import get_reference_files
+    reference_specs = get_reference_files()
     results = compare_to_references(spec, reference_specs)
+
 
     return render_template(
         'results.html',
