@@ -103,7 +103,6 @@ def compare_to_references(input_spectrogram, reference_files):
 if __name__ == "__main__":
     reference_files = get_reference_files()                                     # load all reference birds from data/reference/
     test_files      = get_test_files()                                          # load all test birds from data/test/
-    reference_specs = get_reference_files()
     
     print(f"\n[PIPELINE] Testing {len(test_files)} birds against {len(reference_files)} references\n")
 
