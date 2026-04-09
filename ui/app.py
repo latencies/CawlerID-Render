@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 import os
 
 from spectrogram.spectrogram_generator import plot_spectrogram, generate_mel_spectrogram
-from similarity_model.similarity_ranker import compare_to_references, generate_mock_spectrogram, reference_specs
+from similarity_model.similarity_ranker import compare_to_references, reference_specs
 
 app = Flask(__name__)
 # Configure uploads folder:
