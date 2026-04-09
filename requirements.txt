@@ -9,3 +9,6 @@ librosa>=0.11.0
 matplotlib>=3.5.0
 soundfile==0.12.1
 audioread==3.0.1
+
+Flask
+gunicorn
